@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><title>Application Form</title>
+<style>
+  .required:after {
+    content:" *";
+    color: red;
+  }
+p.italic {
+  font style: italic;
+}
+</style></head>
+<body>
+<form>
+<div>
+<table bgcolor="#3189C8" align="center" width="100%">
+<tr><td style="width:2000px;text-align:center"><h2 align="center" style="color:white">Player Details</h2></td></tr></table></br>
+<table align="center" bgcolor="#99ccff" cellpadding="5">
+<tr><td style="width:1000px;text-align:right"><label class="required"><em>Name</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="width:1000px"><input type="text" id="name" required=required placeholder="Enter your name" autofocus></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>DOB</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><input type="date" id="dob" class="required" placeholder="DD/MM/YYYY"></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Age</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><input type="number" id="age" required=required placeholder="Enter your age"></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Email Id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><input type="email" id="email" required=required placeholder="abc12@xyz.com"></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Country</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><select name="country" id="country">
+<option>India</option>
+<option>Pakistan</option>
+<option>Algeria</option>
+<option>Afghanistan</option>
+<option>Albania</option><br></select></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Skills</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="checkbox" id="skills">
+<label>Batting</label>
+<input type="checkbox" id="skills">
+<label>Bowling</label></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Bat Style</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="radio" id="bat" name="bat">
+<label>Right Handed</label>
+<input type="radio" id="bat" name="bat">
+<label>Left Handed</label></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Bowl Style</em></label>&nbsp;&nbsp;&nbsp;</td>
+<td><input type="radio" id="bowl" name="bowl">
+<label>Right Handed</label>
+<input type="radio" id="bowl" name="bowl">
+<label>Left Handed</label></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Matches</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="number" id="match" name="match" placeholder="Matches Played" required=required></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Runs</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="number" id="run" name="run" placeholder="Totalruns scored" required=required></td></tr>
+<tr><td style="text-align:right"><label class="required"><em>Wickets</em></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><input type="text" id="wicket" name="wicket" placeholder="Wickets" required=required></td></tr>
+<tr><td style="text-align:right"><em>Achievements</em>&nbsp;&nbsp;</td>
+<td><textarea type="text" id="achieve" name="achieve" placeholder="Your Achievements in cricket" rows="4" cols="25"required=required></textarea></td></tr>
+</table><br>
+<table bgcolor="#3189C8" width:"100%">
+<tr><td style="width:2000px;text-align:center">
+<button type="submit" formaction="linkpage.html">Submit</button>
+<button type="reset">Reset</button></td></tr></table></div>
+</form>
+</body>
+</html>
