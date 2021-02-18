@@ -1,0 +1,58 @@
+<html>
+    <head>
+       <title>
+           Winner
+       </title>
+       <style>
+            div{
+                width: 400px;
+                height: 550px;
+                border: 3px solid black;
+                background-color:#EBC463;
+                text-align: left;
+                margin-left: 20%;
+            }
+       </style> 
+       <script>
+           function fun()
+           {
+               var a=document.getElementById("TA").value;
+               var b=document.getElementById("TB").value;
+               var res1=a.split("/");
+               var res2=b.split("/");
+               if(res1[0]>res2[0])
+               {
+                   document.getElementById("res").innerHTML=document.getElementById("A").value;
+               }
+               else{
+                document.getElementById("res").innerHTML=document.getElementById("B").value;
+               }
+           }
+       </script>
+    </head>
+    <body>
+        <div>
+        <h1>
+            <b>Match Summary</b>
+        </h1>
+        <form>
+        <label>Team A: </label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="A" required="required" placeholder="Team A"><br><br><br> 
+        <label>Team B: </label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="B" required="required" placeholder="Team B"><br><br><br>
+        <label>Date: </label>&nbsp;&nbsp;&nbsp;
+        <input type="date" required="required" placeholder="DD/MM/YYYY"><br><br><br>  
+        <label>Time: </label>&nbsp;&nbsp;&nbsp;
+        <input type="time" required="required" placeholder="HH:MM:SS" ><br><br><br>
+        <label>Team A Score: </label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="TA" required="required" placeholder="Runs/Wkts"><br><br><br>
+        <label>Team B Score: </label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="TB" required="required" placeholder="Runs/Wkts"><br><br><br>
+        <button onclick="fun()">save</button><br><br><br><br>
+        Winning Team: <p id="res"></p>
+        </form>
+        </div>
+        
+
+    </body>
+</html>
