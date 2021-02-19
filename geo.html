@@ -1,0 +1,32 @@
+<htmL>
+<head></head>
+<body>
+<h1 style="text-align: left; font-size: xxx-large; color: rgb(14, 13, 13);"><i>Track the location</i></h1>
+            <button onclick="getLocation()" >Get Location</button>
+            <div id="output"></div><br>
+
+            <script>
+                    src="http://code.jquery.com/jquery-2.2.4.min.js"
+            </script>
+        
+          <script>  var x=document.getElementById('output');
+            function getLocation()
+                {
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    }
+                    else{
+                        x.innerHTML="Browser not supporting";
+                    }
+                }
+                function showPosition(position)
+                {
+                    x.innerHTML="Latitude= "+position.coords.latitude;
+                    x.innerHTML+="<br/>"
+                    x.innerHTML+="Longitude= "+position.coords.longitude;
+                }
+            
+            </script>
+<center><button type="button"><a href="file:///C:/Users/CTEA/Desktop/content.html">HOME</a></button></center>
+</body>
+</html>
